@@ -1,0 +1,125 @@
+	*{	
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer */
+	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+	-webkit-user-select: none; /* Chrome, Safari, and Opera */
+	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+	-webkit-tap-highlight-color: rgba(0,0,0,0); 
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+	}			
+		
+#conteiner{
+	--background-color:#FEE;
+	--width: 50%;		
+	max-width: 500px;
+	min-width: 200px;		
+	text-align: left;
+	--font-weight:bold;
+	font-family: sans-serif;
+	font-size: 15px;
+	color: #444;
+	}	
+		
+.rez{	
+	text-align: center;
+	font-size: 18px;
+	color: #428BCA;
+	padding-top: 8px;
+	}
+		
+.vopros {	
+	margin: 10px;	
+	}
+		
+.zagolovok{
+	display: inline-block;
+	padding-top: 8px;
+	padding-bottom: 3px;
+	font-size: 16px;
+	}		
+		
+.joints{			
+	text-align: center;	
+	}
+	.joints svg{
+		max-width: 70%;
+		}		
+	.joint{		
+		cursor: pointer;		
+		}
+
+.PASI_gruppa{	
+	border-top				: 1px dashed #888;	
+	vertical-align			: bottom; 
+	}
+	.lev {
+		//background-color	: #FEE;
+		padding-top			: 5px;
+		//vertical-align	: top; 
+		display				: inline-block;
+		//text-align		: justify; 
+		width				: 50%;			
+		}
+	.prav {
+		padding-top			: 15px;
+		text-align			: center;
+		vertical-align		: top;
+		display				: inline-block;
+		//background-color	:#FEE;
+		width				: 30%;		
+		}				
+	.PASI_gruppa svg{
+	//max-width: 90px;
+	//min-width: 80px;
+	width: 85px;
+	}		
+	.PASI_zagolovok{
+	text-align:center;
+	color:green; 
+	padding: 5px;	
+	}
+
+		
+.gruppa_perecl {		
+	width: 100%;		
+	display: flex;
+	border: 1px solid #888;
+	border-radius: 4px;			
+	} 	
+	.gruppa_perecl label{
+		display: block;
+		width: 50%;
+		text-align: center;	
+		border-right: 1px solid #888;
+		cursor: pointer;
+		background-color: #eee;
+		padding: 3px 0px;
+		}
+		.gruppa_perecl input[type = "radio"]{
+		display: none;
+		}
+		.gruppa_perecl :checked + label{
+		background-color: #428BCA;
+		border: 1px solid #428BCA;
+		color: #fff;		
+		}	
+	.gruppa_perecl label:first-of-type {border-radius: 3px 0px 0px 3px;}
+	.gruppa_perecl label:last-of-type {	border-right: 0px;	border-radius: 0px 3px 3px 0px;}	
+				
+.gruppa_vibor{
+	background-color: #eee;
+	padding: 4px 4px;
+	border: 1px solid #888;
+	border-radius: 4px;
+	}	
+		
+.znach{
+	background-color: #eee;
+	padding: 4px 4px;
+	border: 1px solid #888;
+	border-radius: 4px;
+	width: 15%;
+	}	
+		
+			
+	

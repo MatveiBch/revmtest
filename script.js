@@ -10,9 +10,9 @@ function Proverka_Chisl(input){
 		}
 }
 
-function ClickJoint(jointName, ClassName){		
+function Clickсустав(суставName, ClassName){		
 	
-	var element = document.getElementById(jointName);			
+	var element = document.getElementById(суставName);			
 	var fill 	= element.getAttribute('fill');		
 	
 	if (fill == "#FFFFFF"){
@@ -32,11 +32,11 @@ function ClickJoint(jointName, ClassName){
 		}				
 	}
 					
-	if (ClassName == "tender_joint"){
-		element = document.getElementById('sum_tender_joint');						
+	if (ClassName == "tender_сустав"){
+		element = document.getElementById('sum_tender_сустав');						
 	}
-	else if (ClassName == "swollen_joint"){
-		element = document.getElementById('sum_swollen_joint');					
+	else if (ClassName == "swollen_сустав"){
+		element = document.getElementById('sum_swollen_сустав');					
 	};	
 	element.value = sum;	
 	

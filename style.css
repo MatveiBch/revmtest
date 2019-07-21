@@ -8,7 +8,7 @@
 	-webkit-tap-highlight-color: transparent; /* For some Androids */
 	}			
 		
-#conteiner{
+#контейнер{
 	--background-color:#FEE;
 	--width: 50%;		
 	max-width: 500px;
@@ -20,39 +20,39 @@
 	color: #444;
 	}	
 		
-.rez{	
+.результат{	
 	text-align: center;
 	font-size: 18px;
 	color: #428BCA;
 	padding-top: 8px;
 	}
 		
-.vopros {	
+.вопрос {	
 	margin: 10px;	
 	}
 		
-.zagolovok{
+.заголовок{
 	display: inline-block;
-	padding-top: 8px;
+	 
 	padding-bottom: 3px;
 	font-size: 16px;
 	}		
 		
-.joints{			
+.суставы{			
 	text-align: center;	
 	}
-	.joints svg{
+	.суставы svg{
 		max-width: 70%;
 		}		
-	.joint{		
+	.сустав{		
 		cursor: pointer;		
 		}
 
-.PASI_gruppa{	
+.PASI_группа{	
 	border-top				: 1px dashed #888;	
 	vertical-align			: bottom; 
 	}
-	.lev {
+	.PASI_лев {
 		//background-color	: #FEE;
 		padding-top			: 5px;
 		//vertical-align	: top; 
@@ -60,7 +60,7 @@
 		//text-align		: justify; 
 		width				: 50%;			
 		}
-	.prav {
+	.PASI_прав {
 		padding-top			: 15px;
 		text-align			: center;
 		vertical-align		: top;
@@ -68,25 +68,25 @@
 		//background-color	:#FEE;
 		width				: 30%;		
 		}				
-	.PASI_gruppa svg{
+	.PASI_группа svg{
 	//max-width: 90px;
 	//min-width: 80px;
 	width: 85px;
 	}		
-	.PASI_zagolovok{
+	.PASI_заголовок{
 	text-align:center;
 	color:green; 
 	padding: 5px;	
 	}
 
 		
-.gruppa_perecl {		
+.группа_переключатель {		
 	width: 100%;		
 	display: flex;
 	border: 1px solid #888;
 	border-radius: 4px;			
 	} 	
-	.gruppa_perecl label{
+	.группа_переключатель label{
 		display: block;
 		width: 50%;
 		text-align: center;	
@@ -95,25 +95,38 @@
 		background-color: #eee;
 		padding: 3px 0px;
 		}
-		.gruppa_perecl input[type = "radio"]{
+		.группа_переключатель input[type = "radio"]{
 		display: none;
 		}
-		.gruppa_perecl :checked + label{
+		.группа_переключатель :checked + label{
 		background-color: #428BCA;
 		border: 1px solid #428BCA;
 		color: #fff;		
 		}	
-	.gruppa_perecl label:first-of-type {border-radius: 3px 0px 0px 3px;}
-	.gruppa_perecl label:last-of-type {	border-right: 0px;	border-radius: 0px 3px 3px 0px;}	
+	.группа_переключатель label:first-of-type {border-radius: 3px 0px 0px 3px;}
+	.группа_переключатель label:last-of-type {	border-right: 0px;	border-radius: 0px 3px 3px 0px;}	
+
+.подпись_переключателя {
+	width:  100%; /* Ширина таблицы */
+	color: unset; /* Почему-то не наследует цвет делаем как у родителя*/
+	//border-spacing: 0; /* Расстояние между ячейками */
+	}
+   .подпись_переключателя td {
+		width: 50%; /* Ширина ячеек */		
+		}
+   .подпись_прав { /* Правая ячейка */ 
+		text-align: right; /* Выравнивание по правому краю */
+		}
+			
 				
-.gruppa_vibor{
+.группа_выбор{
 	background-color: #eee;
 	padding: 4px 4px;
 	border: 1px solid #888;
 	border-radius: 4px;
 	}	
 		
-.znach{
+.ввод_значения{
 	background-color: #eee;
 	padding: 4px 4px;
 	border: 1px solid #888;

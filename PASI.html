@@ -10,43 +10,43 @@
 	
 	<body>			
 		
-		<div id = "conteiner">
+		<div id = "контейнер">
 		
-			<div class = "rez"> <span id = "rez"> PASI: 0 </span> <span  id = "rez_poyasn"></span></div>
+			<div class = "результат"> <span id = "результат"> PASI: 0 </span> <span  id = "результат_poyasn"></span></div>
 
-				<div  class = "vopros" style="" >								
-					<div class="PASI_gruppa" style="">
-						<div class="PASI_zagolovok" style="">Голова</div>
+				<div  class = "вопрос" style="" >								
+					<div class="PASI_группа" style="">
+						<div class="PASI_заголовок" style="">Голова</div>
 						<div style="text-align:justify"> Выберите в процентном соотношении площадь поражения кожи лица и головы с учетом волосистой ее части, а также укажите наличие типичных признаков и степени их проявления в этой зоне. </div>
-						<div class="lev" style="">								
-							<div><div class = "zagolovok" style="" >Покраснение</div></div>
-							<select class="gruppa_vibor" id="pokras_golov" onchange="itog()">
+						<div class="PASI_лев" style="">								
+							<div><div class = "заголовок" style="" >Покраснение</div></div>
+							<select class="группа_выбор" id="pokras_golov" onchange="itog()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
 								<option value="3">3. Сильно</option>
 								<option value="4">4. Очень сильно</option>
 							</select>					
-							<div><div class = "zagolovok" style="" >Шелушение</div></div>
-							<select class="gruppa_vibor" id="shelysh_golov" onchange="itog()">
+							<div><div class = "заголовок" style="" >Шелушение</div></div>
+							<select class="группа_выбор" id="shelysh_golov" onchange="itog()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
 								<option value="3">3. Сильно</option>
 								<option value="4">4. Очень сильно</option>
 							</select>						
-							<div><div class = "zagolovok" style="" >Утолщение</div></div>
-							<select class="gruppa_vibor" id="ytolsh_golov" onchange="itog()">
+							<div><div class = "заголовок" style="" >Утолщение</div></div>
+							<select class="группа_выбор" id="ytolsh_golov" onchange="itog()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
 								<option value="3">3. Сильно</option>
 								<option value="4">4. Очень сильно</option>
 							</select>
-							<div class = "zagolovok" >Область поражения, %</div>
+							<div class = "заголовок" >Область поражения, %</div>
 						</div>
 						
-						<div class="prav" style="">									
+						<div class="PASI_прав" style="">									
 								<svg version="1.1" id="svg815"  viewBox="0 0 183 373" sodipodi:docname="Тело.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
 								<path style="fill:#f67365ff;stroke:#888;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" d="m 77.763251,32.401354 c -2.076635,-9.546624 -1.358216,-11.513633 0.59453,-14.537729 9.398356,-14.5546536 34.603309,-4.740313 26.864249,14.97707 2.50685,-0.795085 4.7502,-1.28275 2.08686,3.954063 l -5.16225,8.457303 -0.21967,12.740872 2.08687,3.075382 -25.591579,-0.21967 2.745878,-3.954063 -0.659011,-11.862191 -5.60159,-10.434335 c -1.095185,-4.621705 1.155898,-2.885498 2.855713,-2.196702 z" id="path825" inkscape:connector-curvature="0" sodipodi:nodetypes="cscccccccccc"></path>
 									  <path style="fill:#eeeeee;stroke:#888;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" d="m 61.068316,156.18551 60.189634,0.21967 -4.83274,-16.69493 4.61307,-26.36043 V 69.635453 l -17.02444,-8.567138 -25.591579,-0.21967 -14.278563,9.445819 -0.43934,45.471736 2.855713,26.14075 z" id="path827" inkscape:connector-curvature="0" sodipodi:nodetypes="ccccccccccc"></path>
@@ -59,7 +59,7 @@
 								</svg>
 						</div>					
 						
-						<div class="gruppa_perecl" style=""  >					
+						<div class="группа_переключатель" style=""  >					
 							  <input type="radio" name="porazh_golov" id="porazh_golov_0" value = 0 onchange="itog()" checked>
 							  <label for="porazh_golov_0">0</label>					
 							  <input type="radio" name="porazh_golov" id="porazh_golov_1" value = 1 onchange="itog()">
@@ -79,40 +79,40 @@
 					</div>
 				</div>	
 				
-				<div  class = "vopros" style="" >								
-					<div class="PASI_gruppa" style="">
-						<div class="PASI_zagolovok" style=""> Тело </div>
-						<div style="text-align:justify"> Внимательно осмотрите свою грудь, живот и спину, чтобы дать правильную оценку площади поражения, а также отметьте степень проявления типичных симптомов. Покраснения, шелушение и зуд частей тела. </div>
-						<div class="lev" style="">					
+				<div  class = "вопрос" style="" >								
+					<div class="PASI_группа" style="">
+						<div class="PASI_заголовок" style=""> Тело </div>
+						<div style="text-align:justify"> Внимательно осмотрите свою грудь, живот и спину, чтобы дать PASI_правильную оценку площади поражения, а также отметьте степень проявления типичных симптомов. Покраснения, шелушение и зуд частей тела. </div>
+						<div class="PASI_лев" style="">					
 							
-							<div><div class = "zagolovok" style="" >Покраснение</div></div>
-							<select class="gruppa_vibor" id="pokras_telo" onchange="itog()">
+							<div><div class = "заголовок" style="" >Покраснение</div></div>
+							<select class="группа_выбор" id="pokras_telo" onchange="itog()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
 								<option value="3">3. Сильно</option>
 								<option value="4">4. Очень сильно</option>
 							</select>							
-							<div><div class = "zagolovok" style="" >Шелушение</div></div>
-							<select class="gruppa_vibor" id="shelysh_telo" onchange="itog()">
+							<div><div class = "заголовок" style="" >Шелушение</div></div>
+							<select class="группа_выбор" id="shelysh_telo" onchange="itog()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
 								<option value="3">3. Сильно</option>
 								<option value="4">4. Очень сильно</option>
 							</select>
-							<div><div class = "zagolovok" style="" >Утолщение</div></div>
-							<select class="gruppa_vibor" id="ytolsh_telo" onchange="itog()">
+							<div><div class = "заголовок" style="" >Утолщение</div></div>
+							<select class="группа_выбор" id="ytolsh_telo" onchange="itog()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
 								<option value="3">3. Сильно</option>
 								<option value="4">4. Очень сильно</option>
 							</select>
-							<div class = "zagolovok" >Область поражения, %</div>
+							<div class = "заголовок" >Область поражения, %</div>
 						</div>
 						
-						<div class="prav" style="">									
+						<div class="PASI_прав" style="">									
 								<svg version="1.1" id="svg815"  viewBox="0 0 183 373" sodipodi:docname="Тело.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
 										<path style="fill:#eeeeee;stroke:#888;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" d="m 77.763251,32.401354 c -2.076635,-9.546624 -1.358216,-11.513633 0.59453,-14.537729 9.398356,-14.5546536 34.603309,-4.740313 26.864249,14.97707 2.50685,-0.795085 4.7502,-1.28275 2.08686,3.954063 l -5.16225,8.457303 -0.21967,12.740872 2.08687,3.075382 -25.591579,-0.21967 2.745878,-3.954063 -0.659011,-11.862191 -5.60159,-10.434335 c -1.095185,-4.621705 1.155898,-2.885498 2.855713,-2.196702 z" id="path825" inkscape:connector-curvature="0" sodipodi:nodetypes="cscccccccccc"></path>
 									  <path style="fill:#f67365ff;stroke:#888;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" d="m 61.068316,156.18551 60.189634,0.21967 -4.83274,-16.69493 4.61307,-26.36043 V 69.635453 l -17.02444,-8.567138 -25.591579,-0.21967 -14.278563,9.445819 -0.43934,45.471736 2.855713,26.14075 z" id="path827" inkscape:connector-curvature="0" sodipodi:nodetypes="ccccccccccc"></path>
@@ -125,7 +125,7 @@
 								</svg>
 						</div>					
 						
-						<div class="gruppa_perecl" style=""  >					
+						<div class="группа_переключатель" style=""  >					
 								  <input type="radio" name="porazh_telo" id="porazh_telo_0" value = 0 onchange="itog()" checked>
 								  <label for="porazh_telo_0">0</label>					
 								  <input type="radio" name="porazh_telo" id="porazh_telo_1" value = 1 onchange="itog()">
@@ -145,40 +145,40 @@
 					</div>
 				</div>	
 				
-				<div  class = "vopros" style="" >								
-					<div class="PASI_gruppa" style="">
-						<div class="PASI_zagolovok" style=""> Руки </div>
+				<div  class = "вопрос" style="" >								
+					<div class="PASI_группа" style="">
+						<div class="PASI_заголовок" style=""> Руки </div>
 						<div style="text-align:justify"> В данной области зачастую болезнь поражает кожу ладоней и локтей, а также локтевые сгибы и реже – внешнюю поверхность кистей. Не забудьте отметить степень проявления типичных признаков. </div>
-						<div class="lev" style="">					
+						<div class="PASI_лев" style="">					
 							
-							<div><div class = "zagolovok" style="" >Покраснение</div></div>
-							<select class="gruppa_vibor" id="pokras_ryki" onchange="itog()">
+							<div><div class = "заголовок" style="" >Покраснение</div></div>
+							<select class="группа_выбор" id="pokras_ryki" onchange="itog()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
 								<option value="3">3. Сильно</option>
 								<option value="4">4. Очень сильно</option>
 							</select>						
-							<div><div class = "zagolovok" style="" >Шелушение</div></div>
-							<select class="gruppa_vibor" id="shelysh_ryki" onchange="itog()">
+							<div><div class = "заголовок" style="" >Шелушение</div></div>
+							<select class="группа_выбор" id="shelysh_ryki" onchange="itog()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
 								<option value="3">3. Сильно</option>
 								<option value="4">4. Очень сильно</option>
 							</select>
-							<div><div class = "zagolovok" style="" >Утолщение</div></div>
-							<select class="gruppa_vibor" id="ytolsh_ryki" onchange="itog()">
+							<div><div class = "заголовок" style="" >Утолщение</div></div>
+							<select class="группа_выбор" id="ytolsh_ryki" onchange="itog()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
 								<option value="3">3. Сильно</option>
 								<option value="4">4. Очень сильно</option>
 							</select>
-							<div class = "zagolovok" >Область поражения, %</div>
+							<div class = "заголовок" >Область поражения, %</div>
 						</div>
 						
-						<div class="prav" style="">									
+						<div class="PASI_прав" style="">									
 								<svg version="1.1" id="svg815"  viewBox="0 0 183 373" sodipodi:docname="Тело.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
 								<path style="fill:#eeeeee;stroke:#888;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" d="m 77.763251,32.401354 c -2.076635,-9.546624 -1.358216,-11.513633 0.59453,-14.537729 9.398356,-14.5546536 34.603309,-4.740313 26.864249,14.97707 2.50685,-0.795085 4.7502,-1.28275 2.08686,3.954063 l -5.16225,8.457303 -0.21967,12.740872 2.08687,3.075382 -25.591579,-0.21967 2.745878,-3.954063 -0.659011,-11.862191 -5.60159,-10.434335 c -1.095185,-4.621705 1.155898,-2.885498 2.855713,-2.196702 z" id="path825" inkscape:connector-curvature="0" sodipodi:nodetypes="cscccccccccc"></path>
 									  <path style="fill:#eeeeee;stroke:#888;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" d="m 61.068316,156.18551 60.189634,0.21967 -4.83274,-16.69493 4.61307,-26.36043 V 69.635453 l -17.02444,-8.567138 -25.591579,-0.21967 -14.278563,9.445819 -0.43934,45.471736 2.855713,26.14075 z" id="path827" inkscape:connector-curvature="0" sodipodi:nodetypes="ccccccccccc"></path>
@@ -191,7 +191,7 @@
 								</svg>
 						</div>					
 						
-						<div class="gruppa_perecl" style=""  >					
+						<div class="группа_переключатель" style=""  >					
 								  <input type="radio" name="porazh_ryki" id="porazh_ryki_0" value = 0 onchange="itog()" checked>
 								  <label for="porazh_ryki_0">0</label>					
 								  <input type="radio" name="porazh_ryki" id="porazh_ryki_1" value = 1 onchange="itog()">
@@ -211,40 +211,40 @@
 					</div>
 				</div>	
 		
-				<div  class = "vopros" style="" >								
-					<div class="PASI_gruppa" style="">
-						<div class="PASI_zagolovok" style=""> Ноги </div>
+				<div  class = "вопрос" style="" >								
+					<div class="PASI_группа" style="">
+						<div class="PASI_заголовок" style=""> Ноги </div>
 						<div style="text-align:justify"> Для данной зоны наиболее характерны поражения коленей и ступней, а также сыпь может появляться в паховой области и на ягодицах. Отметив площадь распространения сыпи, укажите силу проявления симптомов. </div>
-						<div class="lev" style="">					
+						<div class="PASI_лев" style="">					
 							
-							<div><div class = "zagolovok" style="" >Покраснение</div></div>
-							<select class="gruppa_vibor" id="pokras_nogi" onchange="itog()">
+							<div><div class = "заголовок" style="" >Покраснение</div></div>
+							<select class="группа_выбор" id="pokras_nogi" onchange="itog()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
 								<option value="3">3. Сильно</option>
 								<option value="4">4. Очень сильно</option>
 							</select>						
-							<div><div class = "zagolovok" style="" >Шелушение</div></div>
-							<select class="gruppa_vibor" id="shelysh_nogi" onchange="itog()">
+							<div><div class = "заголовок" style="" >Шелушение</div></div>
+							<select class="группа_выбор" id="shelysh_nogi" onchange="itog()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
 								<option value="3">3. Сильно</option>
 								<option value="4">4. Очень сильно</option>
 							</select>
-							<div><div class = "zagolovok" style="" >Утолщение</div></div>
-							<select class="gruppa_vibor" id="ytolsh_nogi" onchange="itog()">
+							<div><div class = "заголовок" style="" >Утолщение</div></div>
+							<select class="группа_выбор" id="ytolsh_nogi" onchange="itog()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
 								<option value="3">3. Сильно</option>
 								<option value="4">4. Очень сильно</option>
 							</select>
-							<div class = "zagolovok" >Область поражения, %</div>
+							<div class = "заголовок" >Область поражения, %</div>
 						</div>
 						
-						<div class="prav" style="">									
+						<div class="PASI_прав" style="">									
 								<svg version="1.1" id="svg815"  viewBox="0 0 183 373" sodipodi:docname="Тело.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
 								<path style="fill:#eeeeee;stroke:#888;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" d="m 77.763251,32.401354 c -2.076635,-9.546624 -1.358216,-11.513633 0.59453,-14.537729 9.398356,-14.5546536 34.603309,-4.740313 26.864249,14.97707 2.50685,-0.795085 4.7502,-1.28275 2.08686,3.954063 l -5.16225,8.457303 -0.21967,12.740872 2.08687,3.075382 -25.591579,-0.21967 2.745878,-3.954063 -0.659011,-11.862191 -5.60159,-10.434335 c -1.095185,-4.621705 1.155898,-2.885498 2.855713,-2.196702 z" id="path825" inkscape:connector-curvature="0" sodipodi:nodetypes="cscccccccccc"></path>
 									  <path style="fill:#eeeeee;stroke:#888;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" d="m 61.068316,156.18551 60.189634,0.21967 -4.83274,-16.69493 4.61307,-26.36043 V 69.635453 l -17.02444,-8.567138 -25.591579,-0.21967 -14.278563,9.445819 -0.43934,45.471736 2.855713,26.14075 z" id="path827" inkscape:connector-curvature="0" sodipodi:nodetypes="ccccccccccc"></path>
@@ -257,7 +257,7 @@
 								</svg>
 						</div>					
 						
-						<div class="gruppa_perecl" style=""  >					
+						<div class="группа_переключатель" style=""  >					
 								  <input type="radio" name="porazh_nogi" id="porazh_nogi_0" value = 0 onchange="itog()" checked>
 								  <label for="porazh_nogi_0">0</label>					
 								  <input type="radio" name="porazh_nogi" id="porazh_nogi_1" value = 1 onchange="itog()">
@@ -354,8 +354,8 @@
 					
 				var PASI 		= (pokras_nogi + shelysh_nogi + ytolsh_nogi)*porazh_nogi*0.4 + (pokras_ryki + shelysh_ryki + ytolsh_ryki)*porazh_ryki*0.2  + (pokras_telo + shelysh_telo + ytolsh_telo)*porazh_telo*0.3 + (pokras_golov + shelysh_golov + ytolsh_golov)*porazh_golov*0.1;			
 				
-				element 		= document.getElementById('rez');
-				element_poyasn 	= document.getElementById('rez_poyasn');				
+				element 		= document.getElementById('результат');
+				element_poyasn 	= document.getElementById('результат_poyasn');				
 				
 				if (PASI <= 10 ){					
 					poyasn = " Легкое течение";

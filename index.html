@@ -9,16 +9,24 @@
 	<body>			
 		
 		<div id = "контейнер">		
-			<div style="text-align:center"><p  >Тесты</p></div>
+			<div class = "заголовок_группы" style="">ревматоидный артрит</div>
 			<div><a class = "ссылка_на_тест" href = "SDAI.html" > SDAI </a></div>
-			<div><a class = "ссылка_на_тест" href = "PASI.html" > PASI </a> </div>
+			<div class = "заголовок_группы" style="">псориаз</div>
+			<div><a class = "ссылка_на_тест" href = "PASI.html" > PASI </a> </div>			
+			<div class = "заголовок_группы" style="">анкилозирующй спондилоартрит</div> 
 			<div><a class = "ссылка_на_тест" href = "BASDAI.html" > BASDAI </a> </div>
-		</div>	
-		
-			  
+			<div><a class = "ссылка_на_тест" href = "BASFI.html" > BASFI </a> </div>
+		</div>		  
 			
 
 	<style> 
+	
+	.заголовок_группы{
+	text-align:center;
+	color:green; 
+	padding: 5px;
+	}
+	
 	.ссылка_на_тест{
 	font-family			: sans-serif;
 	font-size			: 20px;
@@ -26,6 +34,7 @@
 	display				: inline-block;
 	text-align			: center;
 	margin-bottom		: 10px;
+	margin-left			: 10px;
 	padding-top 		: 3px;
 	padding-bottom 		: 3px;
 	border				: 1px solid #888;

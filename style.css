@@ -73,7 +73,8 @@
 	//min-width: 80px;
 	width: 85px;
 	}		
-	.PASI_заголовок{
+
+.заголовок_группы{
 	text-align:center;
 	color:green; 
 	padding: 5px;	
@@ -107,6 +108,7 @@
 	.группа_переключатель label:last-of-type {	border-right: 0px;	border-radius: 0px 3px 3px 0px;}	
 
 .подпись_переключателя {
+	font-size: 14px;
 	width:  100%; /* Ширина таблицы */
 	color: unset; /* Почему-то не наследует цвет делаем как у родителя*/
 	//border-spacing: 0; /* Расстояние между ячейками */

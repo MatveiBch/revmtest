@@ -12,11 +12,11 @@
 		
 		<div id = "контейнер">
 		
-			<div class = "результат"> <span id = "результат"> BASDAI: 0 </span> <span  id = "результат_пояснение"></span></div>
+			<div class = "результат"> <span id = "результат"> ASDAS: 0 </span> <span  id = "результат_пояснение"></span></div>
 
 		
 			<div  class = "вопрос" style="" >			
-				<span class = "заголовок" >1. Как бы Вы расценили уровень общей слабости (утомляемости) за последнюю неделю?</span>			
+				<span class = "заголовок" >1. Как бы Вы охарактеризовали выраженность боли в шее, спине или тазобедренных суставах в целом за последнюю неделю?</span>			
 				<div class="группа_переключатель">	
 						  <input type="radio" name="вопр1" id="вопр1_0" value = 0 onchange="итог()" checked>
 						  <label for="вопр1_0">0</label>					
@@ -43,13 +43,13 @@
 				</div>				
 				
 			  <table class="подпись_переключателя"> 
-				<tr>   <td class = "подпись_лев">не было</td> <td class="подпись_прав">очень выраженная</td>  </tr> 
+				<tr>   <td class = "подпись_лев">не было</td> <td class="подпись_прав">очень сильная</td>  </tr> 
 			  </table>					
 			
 			</div>	
 			
 			<div  class = "вопрос" style="" >	
-				<span class = "заголовок" >2. Как бы Вы расценили уровень боли в шее, спине или тазобедренных суставах за последнюю неделю? </span>			
+				<span class = "заголовок" >2. Как долго продолжалась утренняя скованность с момента пробуждения за последнюю неделю? </span>			
 				<div class="группа_переключатель">					
 						  <input type="radio" name="вопр2" id="вопр2_0" value = 0 onchange="итог()" checked>
 						  <label for="вопр2_0">0</label>					
@@ -75,12 +75,12 @@
 						  <label for="вопр2_10">10</label>				
 				</div>	
 				<table class="подпись_переключателя"> 
-				<tr>   <td class = "подпись_лев">не было</td> <td class="подпись_прав">очень выраженная</td>  </tr> 
+				<tr>   <td class = "подпись_лев">0ч</td> <td class="подпись_прав">2ч и более</td>  </tr> 
 				</table>				
 			</div>
 			
 			<div  class = "вопрос" style="" >	
-				<span class = "заголовок" >3. Как бы Вы расценили уровень боли (или степень припухлости) в суставах (помимо шеи, спины или тазобедренных суставов) за последнюю неделю? </span>			
+				<span class = "заголовок" >3. Насколько высока была активность спондилита на протяжении последней недели? </span>			
 				<div class="группа_переключатель">					
 						  <input type="radio" name="вопр3" id="вопр3_0" value = 0 onchange="итог()" checked>
 						  <label for="вопр3_0">0</label>					
@@ -106,12 +106,12 @@
 						  <label for="вопр3_10">10</label>				
 				</div>	
 				<table class="подпись_переключателя"> 
-				<tr>   <td class = "подпись_лев">не было</td> <td class="подпись_прав">очень выраженная</td>  </tr> 
+				<tr>   <td class = "подпись_лев">низкая</td> <td class="подпись_прав">очень высокая</td>  </tr> 
 				</table>				
 			</div>
 			
 			<div  class = "вопрос" style="" >	
-				<span class = "заголовок" >4. Как бы Вы расценили степень неприятных ощущений, возникающих при дотрагивании до каких-либо болезненных областей или давлении на них (за последнюю неделю)? </span>			
+				<span class = "заголовок" >4. Как бы Вы охарактеризовали выраженность боли в суставах (кроме шеи, спины и тазобедренных суставов) или их припухлость в целом за последнюю неделю? </span>			
 				<div class="группа_переключатель">					
 						  <input type="radio" name="вопр4" id="вопр4_0" value = 0 onchange="итог()" checked>
 						  <label for="вопр4_0">0</label>					
@@ -137,79 +137,36 @@
 						  <label for="вопр4_10">10</label>				
 				</div>	
 				<table class="подпись_переключателя"> 
-				<tr>   <td class = "подпись_лев">не было</td> <td class="подпись_прав">очень выраженная</td>  </tr> 
+				<tr>   <td class = "подпись_лев"> не было</td> <td class="подпись_прав">очень сильная</td>  </tr> 
 				</table>				
 			</div>
 			
-			<div  class = "вопрос" style="" >	
-				<span class = "заголовок" >5. Как бы Вы расценили степень выраженности утренней скованности, возникающей после просыпания (за последнюю неделю)? </span>			
-				<div class="группа_переключатель">					
-						  <input type="radio" name="вопр5" id="вопр5_0" value = 0 onchange="итог()" checked>
-						  <label for="вопр5_0">0</label>					
-						  <input type="radio" name="вопр5" id="вопр5_1" value = 1 onchange="итог()">
-						  <label for="вопр5_1">1</label>				
-						  <input type="radio" name="вопр5" id="вопр5_2" value = 2 onchange="итог()">
-						  <label for="вопр5_2">2</label>					
-						  <input type="radio" name="вопр5" id="вопр5_3" value = 3 onchange="итог()">
-						  <label for="вопр5_3">3</label>					
-						  <input type="radio" name="вопр5" id="вопр5_4" value = 4 onchange="итог()">
-						  <label for="вопр5_4">4</label>								
-						  <input type="radio" name="вопр5" id="вопр5_5" value = 5 onchange="итог()">
-						  <label for="вопр5_5">5</label>				
-						  <input type="radio" name="вопр5" id="вопр5_6" value = 6 onchange="итог()">
-						  <label for="вопр5_6" >6</label>					
-						  <input type="radio" name="вопр5" id="вопр5_7" value = 7 onchange="итог()">
-						  <label for="вопр5_7">7</label>					
-						  <input type="radio" name="вопр5" id="вопр5_8" value = 8 onchange="итог()">
-						  <label for="вопр5_8">8</label>					
-						  <input type="radio" name="вопр5" id="вопр5_9" value = 9 onchange="итог()">
-						  <label for="вопр5_9">9</label>				
-						  <input type="radio" name="вопр5" id="вопр5_10" value = 10 onchange="итог()">
-						  <label for="вопр5_10">10</label>				
+			
+			
+			<div  class = "вопрос" style="" >
+				<div class = "тумблер" style="" >
+					<input type="radio" name="СОЭ_СРБ" id="СОЭ_СРБ_1" value = 0 onchange="тумблер();" checked>
+						<label for="СОЭ_СРБ_1">СРБ</label>					
+					<input type="radio" name="СОЭ_СРБ" id="СОЭ_СРБ_2" value = 1 onchange="тумблер();">
+						<label for="СОЭ_СРБ_2">СОЭ</label>
+				</div>						
+				<div id = "СРБ_группа">			
+					<span class = "заголовок" >СРБ мг/л</span>	</br>		
+					<input class = "ввод_значения" type="number" ID="СРБ" min="0" max="20" step="0.1" onchange="Proverka_Chisl(this); итог();" value = 0 >
 				</div>	
-				<table class="подпись_переключателя"> 
-				<tr>   <td class = "подпись_лев">не было</td> <td class="подпись_прав">очень выраженная</td>  </tr> 
-				</table>				
+				<div  id = "СОЭ_группа">
+					<span class = "заголовок" >СОЭ мм/час</span> </br>		
+					<input class = "ввод_значения" type="number" ID="СОЭ" min="0" max="30" step="0.1" onchange="Proverka_Chisl(this); итог();" value = 0 >
+				</div>
 			</div>
+	
+				
 			
-			<div  class = "вопрос" style="" >	
-				<span class = "заголовок" >6. Как долго длится утренняя скованность, возникающая после просыпания (за последнюю неделю)? </span>			
-				<div class="группа_переключатель">					
-						  <input type="radio" name="вопр6" id="вопр6_0" value = 0 onchange="итог()" checked>
-						  <label for="вопр6_0">0</label>					
-						  <input type="radio" name="вопр6" id="вопр6_1" value = 1 onchange="итог()">
-						  <label for="вопр6_1">1</label>				
-						  <input type="radio" name="вопр6" id="вопр6_2" value = 2 onchange="итог()">
-						  <label for="вопр6_2">2</label>					
-						  <input type="radio" name="вопр6" id="вопр6_3" value = 3 onchange="итог()">
-						  <label for="вопр6_3">3</label>					
-						  <input type="radio" name="вопр6" id="вопр6_4" value = 4 onchange="итог()">
-						  <label for="вопр6_4">4</label>								
-						  <input type="radio" name="вопр6" id="вопр6_5" value = 5 onchange="итог()">
-						  <label for="вопр6_5">5</label>				
-						  <input type="radio" name="вопр6" id="вопр6_6" value = 6 onchange="итог()">
-						  <label for="вопр6_6" >6</label>					
-						  <input type="radio" name="вопр6" id="вопр6_7" value = 7 onchange="итог()">
-						  <label for="вопр6_7">7</label>					
-						  <input type="radio" name="вопр6" id="вопр6_8" value = 8 onchange="итог()">
-						  <label for="вопр6_8">8</label>					
-						  <input type="radio" name="вопр6" id="вопр6_9" value = 9 onchange="итог()">
-						  <label for="вопр6_9">9</label>				
-						  <input type="radio" name="вопр6" id="вопр6_10" value = 10 onchange="итог()">
-						  <label for="вопр6_10">10</label>				
-				</div>	
-				<table class="подпись_переключателя"> 
-				<tr>   <td class = "подпись_лев">не было</td> <td class="подпись_прав">2 часа и больше</td>  </tr> 
-				</table>				
-			</div>
-			
-			<div  class = "вопрос" style="" >		
-			</div>
 			
 		</div>		
 						
 		<script> 		
-			
+			тумблер();
 			function итог()	{	
 				var vopr1 = 0;
 				var vopr2 = 0;
@@ -269,23 +226,27 @@
 						}
 					}		
 					
-				var BASDAI 		= (vopr1 + vopr2 + vopr3 + vopr4 + (vopr5 + vopr6)/2)/5;
-				element 		= document.getElementById('результат');
+				var ASDAS 			= (vopr1 + vopr2 + vopr3 + vopr4 + (vopr5 + vopr6)/2)/5;
+				element 			= document.getElementById('результат');
 				element_пояснение 	= document.getElementById('результат_пояснение');
 				
-				if (BASDAI < 2){
-					пояснение = " Низкая активность";	
+				if (ASDAS < 1.3 ){					
+					пояснение = " Низкая активность";
 					color = '#16B33F';
 					}
-				else if (BASDAI < 4 ){
-					пояснение = " Низкая активность";
+				else if (ASDAS < 2.1){
+					пояснение = " Умеренная активность";	
 					color = '#428BCA';
-					}							
-				else{
+					}
+				else if (ASDAS < 3.5 ){
 					пояснение = " Высокая активность";
+					color = '#FFCC00';
+					}	
+				else{
+					пояснение = " Очень высокая активность";
 					color = '#FF0021';
-					};		
-				text = 'BASDAI: ' + BASDAI + '.';							
+					};				
+				text = 'ASDAS: ' + ASDAS + '.';							
 				element.textContent = text;
 				element_пояснение.textContent = пояснение;
 				//alert(пояснение);
@@ -293,6 +254,35 @@
 				
 			}			
 	
+		function тумблер()	{	
+				var элемент_СОЭ;
+				var элемент_СРБ;				
+				var inp;
+				var СОЭ = false;				
+			
+				inp = document.getElementsByName('СОЭ_СРБ');
+				for (var i = 0; i < inp.length; i++) {
+					if (inp[i].type == "radio" && inp[i].checked) {
+						СОЭ = Number(inp[i].value) == 1;
+						}
+					}	
+				
+				элемент_СОЭ 	= document.getElementById('СОЭ_группа');
+				элемент_СРБ 	= document.getElementById('СРБ_группа');	
+				
+				if (СОЭ){					
+					элемент_СОЭ.style.display = "block";
+					
+					элемент_СРБ.style.display = "none";
+					}				
+				else{
+					элемент_СОЭ.style.display = "none";
+					элемент_СРБ.style.display = "block";
+					};							
+				
+				итог();
+			}			
+					
 		</script>
 				
 		

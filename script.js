@@ -40,5 +40,5 @@ function Clickсустав(суставName, ClassName){
 	};	
 	element.value = sum;	
 	
-	itog();
+	итог();
 }

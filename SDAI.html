@@ -12,11 +12,11 @@
 		
 		<div id = "контейнер">
 		
-			<div class = "результат"> <span id = "результат"> SDAI: 0 </span> <span  id = "результат_poyasn"></span></div>
+			<div class = "результат"> <span id = "результат"> SDAI: 0 </span> <span  id = "результат_пояснение"></span></div>
 
 			<div  class = "вопрос" style="--text-align: center;" >								
 				<div style="text-align:left" ><span class = "заголовок" >Больные суставы</span> </div>			
-				<div><input class = "ввод_значения" type="number" id="sum_tender_сустав" max="28" min="0" onchange="Proverka_Chisl(this); itog();" value = 0 ></div>
+				<div><input class = "ввод_значения" type="number" id="sum_tender_сустав" max="28" min="0" onchange="Proverka_Chisl(this); итог();" value = 0 ></div>
 				<div class="суставы" style="">
 					<svg class="" viewBox="0 0 168 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					  <desc></desc>
@@ -76,7 +76,7 @@
 			
 			<div  class = "вопрос" style="--text-align: center;" >								
 				<div style="text-align: left;" ><span class = "заголовок" >Опухшие суставы</span> </div>			
-				<div style="" ><input class = "ввод_значения" type="number" id="sum_swollen_сустав" max="28" min="0" onchange="Proverka_Chisl(this); itog();" value = 0 ></div>
+				<div style="" ><input class = "ввод_значения" type="number" id="sum_swollen_сустав" max="28" min="0" onchange="Proverka_Chisl(this); итог();" value = 0 ></div>
 				<div class="суставы" style="">
 					<svg class="" viewBox="0 0 168 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				  <desc></desc>
@@ -135,34 +135,34 @@
 			</div>	
 			
 			<div  class = "вопрос" style="" >
-				<span class = "заголовок" >СРБ мг/дл</span>	</br>		
-				<input class = "ввод_значения" type="number" ID="CRP" min="0" max="10" step="0.1" onchange="Proverka_Chisl(this); itog();" value = 0 >
+				<span class = "заголовок" >СРБ мг/л</span>	</br>		
+				<input class = "ввод_значения" type="number" ID="СРБ" min="0" max="10" step="0.1" onchange="Proverka_Chisl(this); итог();" value = 0 >
 			</div>
 			
 			<div  class = "вопрос" style="" >			
 				<span class = "заголовок" >Оценка активности болезни пациентом (0-10)</span>			
 				<div class="группа_переключатель">	
-						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_0" value = 0 onchange="itog()" checked>
+						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_0" value = 0 onchange="итог()" checked>
 						  <label for="оцен_актив_пациент_0">0</label>					
-						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_1" value = 1 onchange="itog()">
+						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_1" value = 1 onchange="итог()">
 						  <label for="оцен_актив_пациент_1">1</label>				
-						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_2" value = 2 onchange="itog()">
+						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_2" value = 2 onchange="итог()">
 						  <label for="оцен_актив_пациент_2">2</label>					
-						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_3" value = 3 onchange="itog()">
+						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_3" value = 3 onchange="итог()">
 						  <label for="оцен_актив_пациент_3">3</label>					
-						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_4" value = 4 onchange="itog()">
+						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_4" value = 4 onchange="итог()">
 						  <label for="оцен_актив_пациент_4">4</label>								
-						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_5" value = 5 onchange="itog()">
+						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_5" value = 5 onchange="итог()">
 						  <label for="оцен_актив_пациент_5">5</label>				
-						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_6" value = 6 onchange="itog()">
+						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_6" value = 6 onchange="итог()">
 						  <label for="оцен_актив_пациент_6" >6</label>					
-						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_7" value = 7 onchange="itog()">
+						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_7" value = 7 onchange="итог()">
 						  <label for="оцен_актив_пациент_7">7</label>					
-						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_8" value = 8 onchange="itog()">
+						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_8" value = 8 onchange="итог()">
 						  <label for="оцен_актив_пациент_8">8</label>					
-						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_9" value = 9 onchange="itog()">
+						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_9" value = 9 onchange="итог()">
 						  <label for="оцен_актив_пациент_9">9</label>				
-						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_10" value = 10 onchange="itog()">
+						  <input type="radio" name="оцен_актив_пациент" id="оцен_актив_пациент_10" value = 10 onchange="итог()">
 						  <label for="оцен_актив_пациент_10">10</label>				
 				</div>
 			</div>	
@@ -170,27 +170,27 @@
 			<div  class = "вопрос" style="" >	
 				<span class = "заголовок" >Оценка активности болезни врачом (0-10)</span>			
 				<div class="группа_переключатель">					
-						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_0" value = 0 onchange="itog()" checked>
+						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_0" value = 0 onchange="итог()" checked>
 						  <label for="оцен_актив_врач_0">0</label>					
-						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_1" value = 1 onchange="itog()">
+						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_1" value = 1 onchange="итог()">
 						  <label for="оцен_актив_врач_1">1</label>				
-						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_2" value = 2 onchange="itog()">
+						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_2" value = 2 onchange="итог()">
 						  <label for="оцен_актив_врач_2">2</label>					
-						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_3" value = 3 onchange="itog()">
+						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_3" value = 3 onchange="итог()">
 						  <label for="оцен_актив_врач_3">3</label>					
-						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_4" value = 4 onchange="itog()">
+						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_4" value = 4 onchange="итог()">
 						  <label for="оцен_актив_врач_4">4</label>								
-						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_5" value = 5 onchange="itog()">
+						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_5" value = 5 onchange="итог()">
 						  <label for="оцен_актив_врач_5">5</label>				
-						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_6" value = 6 onchange="itog()">
+						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_6" value = 6 onchange="итог()">
 						  <label for="оцен_актив_врач_6" >6</label>					
-						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_7" value = 7 onchange="itog()">
+						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_7" value = 7 onchange="итог()">
 						  <label for="оцен_актив_врач_7">7</label>					
-						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_8" value = 8 onchange="itog()">
+						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_8" value = 8 onchange="итог()">
 						  <label for="оцен_актив_врач_8">8</label>					
-						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_9" value = 9 onchange="itog()">
+						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_9" value = 9 onchange="итог()">
 						  <label for="оцен_актив_врач_9">9</label>				
-						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_10" value = 10 onchange="itog()">
+						  <input type="radio" name="оцен_актив_врач" id="оцен_актив_врач_10" value = 10 onchange="итог()">
 						  <label for="оцен_актив_врач_10">10</label>				
 				</div>				
 			</div>
@@ -203,7 +203,7 @@
 						
 		<script> 		
 			
-			function itog()	{	
+			function итог()	{	
 				var vopr1 = 0;
 				var vopr2 = 0;
 				var vopr3 = 0;
@@ -212,7 +212,7 @@
 				var	color = '#428BCA';
 				var element;
 				var text = "";
-				var poyasn = "";
+				var пояснение = "";
 				var inp;
 				
 				//1
@@ -224,7 +224,7 @@
 				vopr2 = Number(element.value);
 				
 				//3
-				element = document.getElementById('CRP');
+				element = document.getElementById('СРБ');
 				vopr3 = Number(element.value);
 				
 				//4
@@ -244,29 +244,29 @@
 					
 				var SDAI 		= vopr1 + vopr2 + vopr3 + vopr4 + vopr5;
 				element 		= document.getElementById('результат');
-				element_poyasn 	= document.getElementById('результат_poyasn');
+				element_пояснение 	= document.getElementById('результат_пояснение');
 				
 				if (SDAI <= 3.3 ){					
-					poyasn = " Ремиссия";
+					пояснение = " Ремиссия";
 					color = '#16B33F';
 					}
 				else if (SDAI <= 11){
-					poyasn = " Низкая активность";	
+					пояснение = " Низкая активность";	
 					color = '#428BCA';
 					}
 				else if (SDAI <= 26 ){
-					poyasn = " Умеренная активность";
+					пояснение = " Умеренная активность";
 					color = '#FFCC00';
 					}	
 				else{
-					poyasn = " Высокая активность";
+					пояснение = " Высокая активность";
 					color = '#FF0021';
 					};		
 				text = 'SDAI: ' + SDAI + '.';							
 				element.textContent = text;
-				element_poyasn.textContent = poyasn;
-				//alert(poyasn);
-				element_poyasn.style.cssText = 'color:' + color + ';';	
+				element_пояснение.textContent = пояснение;
+				//alert(пояснение);
+				element_пояснение.style.cssText = 'color:' + color + ';';	
 				
 			}			
 	

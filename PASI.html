@@ -12,7 +12,7 @@
 		
 		<div id = "контейнер">
 		
-			<div class = "результат"> <span id = "результат"> PASI: 0 </span> <span  id = "результат_poyasn"></span></div>
+			<div class = "результат"> <span id = "результат"> PASI: 0 </span> <span  id = "результат_пояснение"></span></div>
 
 				<div  class = "вопрос" style="" >								
 					<div class="PASI_группа" style="">
@@ -20,7 +20,7 @@
 						<div style="text-align:justify"> Выберите в процентном соотношении площадь поражения кожи лица и головы с учетом волосистой ее части, а также укажите наличие типичных признаков и степени их проявления в этой зоне. </div>
 						<div class="PASI_лев" style="">								
 							<div><div class = "заголовок" style="" >Покраснение</div></div>
-							<select class="группа_выбор" id="pokras_golov" onchange="itog()">
+							<select class="группа_выбор" id="pokras_golov" onchange="итог()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
@@ -28,7 +28,7 @@
 								<option value="4">4. Очень сильно</option>
 							</select>					
 							<div><div class = "заголовок" style="" >Шелушение</div></div>
-							<select class="группа_выбор" id="shelysh_golov" onchange="itog()">
+							<select class="группа_выбор" id="shelysh_golov" onchange="итог()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
@@ -36,7 +36,7 @@
 								<option value="4">4. Очень сильно</option>
 							</select>						
 							<div><div class = "заголовок" style="" >Утолщение</div></div>
-							<select class="группа_выбор" id="ytolsh_golov" onchange="itog()">
+							<select class="группа_выбор" id="ytolsh_golov" onchange="итог()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
@@ -60,19 +60,19 @@
 						</div>					
 						
 						<div class="группа_переключатель" style=""  >					
-							  <input type="radio" name="porazh_golov" id="porazh_golov_0" value = 0 onchange="itog()" checked>
+							  <input type="radio" name="porazh_golov" id="porazh_golov_0" value = 0 onchange="итог()" checked>
 							  <label for="porazh_golov_0">0</label>					
-							  <input type="radio" name="porazh_golov" id="porazh_golov_1" value = 1 onchange="itog()">
+							  <input type="radio" name="porazh_golov" id="porazh_golov_1" value = 1 onchange="итог()">
 							  <label for="porazh_golov_1">< 10</label>				
-							  <input type="radio" name="porazh_golov" id="porazh_golov_2" value = 2 onchange="itog()">
+							  <input type="radio" name="porazh_golov" id="porazh_golov_2" value = 2 onchange="итог()">
 							  <label for="porazh_golov_2">10-29</label>					
-							  <input type="radio" name="porazh_golov" id="porazh_golov_3" value = 3 onchange="itog()">
+							  <input type="radio" name="porazh_golov" id="porazh_golov_3" value = 3 onchange="итог()">
 							  <label for="porazh_golov_3">30-49</label>					
-							  <input type="radio" name="porazh_golov" id="porazh_golov_4" value = 4 onchange="itog()">
+							  <input type="radio" name="porazh_golov" id="porazh_golov_4" value = 4 onchange="итог()">
 							  <label for="porazh_golov_4">50-69</label>								
-							  <input type="radio" name="porazh_golov" id="porazh_golov_5" value = 5 onchange="itog()">
+							  <input type="radio" name="porazh_golov" id="porazh_golov_5" value = 5 onchange="итог()">
 							  <label for="porazh_golov_5">70-89</label>				
-							  <input type="radio" name="porazh_golov" id="porazh_golov_6" value = 6 onchange="itog()">
+							  <input type="radio" name="porazh_golov" id="porazh_golov_6" value = 6 onchange="итог()">
 							  <label for="porazh_golov_6" >> 89</label>								 			
 						</div>									
 						
@@ -86,7 +86,7 @@
 						<div class="PASI_лев" style="">					
 							
 							<div><div class = "заголовок" style="" >Покраснение</div></div>
-							<select class="группа_выбор" id="pokras_telo" onchange="itog()">
+							<select class="группа_выбор" id="pokras_telo" onchange="итог()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
@@ -94,7 +94,7 @@
 								<option value="4">4. Очень сильно</option>
 							</select>							
 							<div><div class = "заголовок" style="" >Шелушение</div></div>
-							<select class="группа_выбор" id="shelysh_telo" onchange="itog()">
+							<select class="группа_выбор" id="shelysh_telo" onchange="итог()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
@@ -102,7 +102,7 @@
 								<option value="4">4. Очень сильно</option>
 							</select>
 							<div><div class = "заголовок" style="" >Утолщение</div></div>
-							<select class="группа_выбор" id="ytolsh_telo" onchange="itog()">
+							<select class="группа_выбор" id="ytolsh_telo" onchange="итог()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
@@ -126,19 +126,19 @@
 						</div>					
 						
 						<div class="группа_переключатель" style=""  >					
-								  <input type="radio" name="porazh_telo" id="porazh_telo_0" value = 0 onchange="itog()" checked>
+								  <input type="radio" name="porazh_telo" id="porazh_telo_0" value = 0 onchange="итог()" checked>
 								  <label for="porazh_telo_0">0</label>					
-								  <input type="radio" name="porazh_telo" id="porazh_telo_1" value = 1 onchange="itog()">
+								  <input type="radio" name="porazh_telo" id="porazh_telo_1" value = 1 onchange="итог()">
 								  <label for="porazh_telo_1">< 10</label>				
-								  <input type="radio" name="porazh_telo" id="porazh_telo_2" value = 2 onchange="itog()">
+								  <input type="radio" name="porazh_telo" id="porazh_telo_2" value = 2 onchange="итог()">
 								  <label for="porazh_telo_2">10-29</label>					
-								  <input type="radio" name="porazh_telo" id="porazh_telo_3" value = 3 onchange="itog()">
+								  <input type="radio" name="porazh_telo" id="porazh_telo_3" value = 3 onchange="итог()">
 								  <label for="porazh_telo_3">30-49</label>					
-								  <input type="radio" name="porazh_telo" id="porazh_telo_4" value = 4 onchange="itog()">
+								  <input type="radio" name="porazh_telo" id="porazh_telo_4" value = 4 onchange="итог()">
 								  <label for="porazh_telo_4">50-69</label>								
-								  <input type="radio" name="porazh_telo" id="porazh_telo_5" value = 5 onchange="itog()">
+								  <input type="radio" name="porazh_telo" id="porazh_telo_5" value = 5 onchange="итог()">
 								  <label for="porazh_telo_5">70-89</label>				
-								  <input type="radio" name="porazh_telo" id="porazh_telo_6" value = 6 onchange="itog()">
+								  <input type="radio" name="porazh_telo" id="porazh_telo_6" value = 6 onchange="итог()">
 								  <label for="porazh_telo_6">> 89</label>					
 							</div>									
 						
@@ -152,7 +152,7 @@
 						<div class="PASI_лев" style="">					
 							
 							<div><div class = "заголовок" style="" >Покраснение</div></div>
-							<select class="группа_выбор" id="pokras_ryki" onchange="itog()">
+							<select class="группа_выбор" id="pokras_ryki" onchange="итог()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
@@ -160,7 +160,7 @@
 								<option value="4">4. Очень сильно</option>
 							</select>						
 							<div><div class = "заголовок" style="" >Шелушение</div></div>
-							<select class="группа_выбор" id="shelysh_ryki" onchange="itog()">
+							<select class="группа_выбор" id="shelysh_ryki" onchange="итог()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
@@ -168,7 +168,7 @@
 								<option value="4">4. Очень сильно</option>
 							</select>
 							<div><div class = "заголовок" style="" >Утолщение</div></div>
-							<select class="группа_выбор" id="ytolsh_ryki" onchange="itog()">
+							<select class="группа_выбор" id="ytolsh_ryki" onchange="итог()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
@@ -192,19 +192,19 @@
 						</div>					
 						
 						<div class="группа_переключатель" style=""  >					
-								  <input type="radio" name="porazh_ryki" id="porazh_ryki_0" value = 0 onchange="itog()" checked>
+								  <input type="radio" name="porazh_ryki" id="porazh_ryki_0" value = 0 onchange="итог()" checked>
 								  <label for="porazh_ryki_0">0</label>					
-								  <input type="radio" name="porazh_ryki" id="porazh_ryki_1" value = 1 onchange="itog()">
+								  <input type="radio" name="porazh_ryki" id="porazh_ryki_1" value = 1 onchange="итог()">
 								  <label for="porazh_ryki_1">< 10</label>				
-								  <input type="radio" name="porazh_ryki" id="porazh_ryki_2" value = 2 onchange="itog()">
+								  <input type="radio" name="porazh_ryki" id="porazh_ryki_2" value = 2 onchange="итог()">
 								  <label for="porazh_ryki_2">10-29</label>					
-								  <input type="radio" name="porazh_ryki" id="porazh_ryki_3" value = 3 onchange="itog()">
+								  <input type="radio" name="porazh_ryki" id="porazh_ryki_3" value = 3 onchange="итог()">
 								  <label for="porazh_ryki_3">30-49</label>					
-								  <input type="radio" name="porazh_ryki" id="porazh_ryki_4" value = 4 onchange="itog()">
+								  <input type="radio" name="porazh_ryki" id="porazh_ryki_4" value = 4 onchange="итог()">
 								  <label for="porazh_ryki_4">50-69</label>								
-								  <input type="radio" name="porazh_ryki" id="porazh_ryki_5" value = 5 onchange="itog()">
+								  <input type="radio" name="porazh_ryki" id="porazh_ryki_5" value = 5 onchange="итог()">
 								  <label for="porazh_ryki_5">70-89</label>				
-								  <input type="radio" name="porazh_ryki" id="porazh_ryki_6" value = 6 onchange="itog()">
+								  <input type="radio" name="porazh_ryki" id="porazh_ryki_6" value = 6 onchange="итог()">
 								  <label for="porazh_ryki_6" >> 89</label>										
 							</div>									
 						
@@ -218,7 +218,7 @@
 						<div class="PASI_лев" style="">					
 							
 							<div><div class = "заголовок" style="" >Покраснение</div></div>
-							<select class="группа_выбор" id="pokras_nogi" onchange="itog()">
+							<select class="группа_выбор" id="pokras_nogi" onchange="итог()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
@@ -226,7 +226,7 @@
 								<option value="4">4. Очень сильно</option>
 							</select>						
 							<div><div class = "заголовок" style="" >Шелушение</div></div>
-							<select class="группа_выбор" id="shelysh_nogi" onchange="itog()">
+							<select class="группа_выбор" id="shelysh_nogi" onchange="итог()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
@@ -234,7 +234,7 @@
 								<option value="4">4. Очень сильно</option>
 							</select>
 							<div><div class = "заголовок" style="" >Утолщение</div></div>
-							<select class="группа_выбор" id="ytolsh_nogi" onchange="itog()">
+							<select class="группа_выбор" id="ytolsh_nogi" onchange="итог()">
 								<option value="0">0. Нет</option>
 								<option value="1">1. Слабо</option>
 								<option value="2">2. Умеренно</option>
@@ -258,19 +258,19 @@
 						</div>					
 						
 						<div class="группа_переключатель" style=""  >					
-								  <input type="radio" name="porazh_nogi" id="porazh_nogi_0" value = 0 onchange="itog()" checked>
+								  <input type="radio" name="porazh_nogi" id="porazh_nogi_0" value = 0 onchange="итог()" checked>
 								  <label for="porazh_nogi_0">0</label>					
-								  <input type="radio" name="porazh_nogi" id="porazh_nogi_1" value = 1 onchange="itog()">
+								  <input type="radio" name="porazh_nogi" id="porazh_nogi_1" value = 1 onchange="итог()">
 								  <label for="porazh_nogi_1">< 10</label>				
-								  <input type="radio" name="porazh_nogi" id="porazh_nogi_2" value = 2 onchange="itog()">
+								  <input type="radio" name="porazh_nogi" id="porazh_nogi_2" value = 2 onchange="итог()">
 								  <label for="porazh_nogi_2">10-29</label>					
-								  <input type="radio" name="porazh_nogi" id="porazh_nogi_3" value = 3 onchange="itog()">
+								  <input type="radio" name="porazh_nogi" id="porazh_nogi_3" value = 3 onchange="итог()">
 								  <label for="porazh_nogi_3">30-49</label>					
-								  <input type="radio" name="porazh_nogi" id="porazh_nogi_4" value = 4 onchange="itog()">
+								  <input type="radio" name="porazh_nogi" id="porazh_nogi_4" value = 4 onchange="итог()">
 								  <label for="porazh_nogi_4">50-69</label>								
-								  <input type="radio" name="porazh_nogi" id="porazh_nogi_5" value = 5 onchange="itog()">
+								  <input type="radio" name="porazh_nogi" id="porazh_nogi_5" value = 5 onchange="итог()">
 								  <label for="porazh_nogi_5">70-89</label>				
-								  <input type="radio" name="porazh_nogi" id="porazh_nogi_6" value = 6 onchange="itog()">
+								  <input type="radio" name="porazh_nogi" id="porazh_nogi_6" value = 6 onchange="итог()">
 								  <label for="porazh_nogi_6" >> 89</label>	
 							</div>									
 						
@@ -280,7 +280,7 @@
 						
 		<script> 		
 			
-			function itog()	{
+			function итог()	{
 			
 				var pokras_golov		= 0;
 				var shelysh_golov		= 0;
@@ -304,7 +304,7 @@
 				
 				var element;
 				var text = "";
-				var poyasn = "";
+				var пояснение = "";
 				var inp;
 				
 				//golov
@@ -355,25 +355,25 @@
 				var PASI 		= (pokras_nogi + shelysh_nogi + ytolsh_nogi)*porazh_nogi*0.4 + (pokras_ryki + shelysh_ryki + ytolsh_ryki)*porazh_ryki*0.2  + (pokras_telo + shelysh_telo + ytolsh_telo)*porazh_telo*0.3 + (pokras_golov + shelysh_golov + ytolsh_golov)*porazh_golov*0.1;			
 				
 				element 		= document.getElementById('результат');
-				element_poyasn 	= document.getElementById('результат_poyasn');				
+				element_пояснение 	= document.getElementById('результат_пояснение');				
 				
 				if (PASI <= 10 ){					
-					poyasn = " Легкое течение";
+					пояснение = " Легкое течение";
 					color = '#16B33F';
 					}	
 				else if (PASI <= 30 ){
-					poyasn = " Средняя тяжесть";
+					пояснение = " Средняя тяжесть";
 					color = '#FFCC00';
 					}	
 				else{
-					poyasn = " Тяжелое течение";
+					пояснение = " Тяжелое течение";
 					color = '#FF0021';
 					};		
 				text = 'PASI: ' + PASI. toFixed(1) + '.';							
 				element.textContent = text;
-				element_poyasn.textContent = poyasn;
-				//alert(poyasn);
-				element_poyasn.style.cssText = 'color:' + color + ';';	
+				element_пояснение.textContent = пояснение;
+				//alert(пояснение);
+				element_пояснение.style.cssText = 'color:' + color + ';';	
 				
 			}			
 	

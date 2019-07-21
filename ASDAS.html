@@ -166,14 +166,16 @@
 		</div>		
 						
 		<script> 		
+			
 			тумблер();
+			
 			function итог()	{	
-				var vopr1 = 0;
-				var vopr2 = 0;
-				var vopr3 = 0;
-				var vopr4 = 0;
-				var vopr5 = 0;
-				var vopr6 = 0;
+				var vopr1 	= 0;
+				var vopr2 	= 0;
+				var vopr3 	= 0;
+				var vopr4 	= 0;
+				var vopr5 	= 0;				
+				var СОЭ 	= false;
 				var	color = '#428BCA';
 				var element;
 				var text = "";
@@ -210,23 +212,27 @@
 					if (inp[i].type == "radio" && inp[i].checked) {
 						vopr4 = Number(inp[i].value);
 						}
-					}
-				//5
-				inp = document.getElementsByName('вопр5');
+					}			
+				
+				inp = document.getElementsByName('СОЭ_СРБ');
 				for (var i = 0; i < inp.length; i++) {
 					if (inp[i].type == "radio" && inp[i].checked) {
-						vopr5 = Number(inp[i].value);
+						СОЭ = Number(inp[i].value) == 1;
 						}
-					}
-				//6
-				inp = document.getElementsByName('вопр6');
-				for (var i = 0; i < inp.length; i++) {
-					if (inp[i].type == "radio" && inp[i].checked) {
-						vopr6 = Number(inp[i].value);
-						}
-					}		
-					
-				var ASDAS 			= (vopr1 + vopr2 + vopr3 + vopr4 + (vopr5 + vopr6)/2)/5;
+					}	
+				if (СОЭ){					
+					//5
+					element = document.getElementById('СОЭ');
+					vopr5 = Number(element.value);
+					var ASDAS 			= 0.079*vopr1 + 0.069*vopr2 + 0.113*vopr3 + 0.086*vopr4 + 0.293*Math.sqrt(vopr5);
+					}				
+				else{
+					//5
+					element = document.getElementById('СРБ');
+					vopr5 = Number(element.value);
+					var ASDAS 			= 0.121*vopr1 + 0.058*vopr2 + 0.110*vopr3 + 0.073*vopr4 + 0.579*( Math.log(vopr5 + 1));
+					};				
+									
 				element 			= document.getElementById('результат');
 				element_пояснение 	= document.getElementById('результат_пояснение');
 				
@@ -246,7 +252,7 @@
 					пояснение = " Очень высокая активность";
 					color = '#FF0021';
 					};				
-				text = 'ASDAS: ' + ASDAS + '.';							
+				text = 'ASDAS: ' + ASDAS.toFixed(1) + '.';							
 				element.textContent = text;
 				element_пояснение.textContent = пояснение;
 				//alert(пояснение);

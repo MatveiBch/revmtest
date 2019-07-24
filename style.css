@@ -120,9 +120,6 @@
 		text-align: right; /* Выравнивание по правому краю */
 		}
 			
-.переключатель_DQLI {
-	font-size: 14px;	
-	}
 
 .тумблер {		
 	width: 25%;		
@@ -161,7 +158,8 @@
 	padding: 4px 4px;
 	border: 1px solid #888;
 	border-radius: 4px;
-	}	
+	}
+
 		
 .ввод_значения{
 	background-color: #eee;
